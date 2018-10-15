@@ -15,15 +15,15 @@ var client *pi.APIClient
 var auth context.Context
 
 func Init() {
-	cfg.BasePath = "https://clsaf.osisoft.int/piwebapi"
+	cfg.BasePath = "https://piwebserver.yourcompany.com/piwebapi"
 
 	tr := &http.Transport{
 		TLSClientConfig: &tls.Config{InsecureSkipVerify: true},
 	}
 
 	auth = context.WithValue(context.Background(), pi.ContextBasicAuth, pi.BasicAuth{
-		UserName: "pidevclub",
-		Password: "pidevclub",
+		UserName: "login",
+		Password: "password",
 	})
 
 	client = pi.NewAPIClient(cfg)
