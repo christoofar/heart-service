@@ -9,10 +9,10 @@ import (
 	"github.com/go-chi/chi/middleware"
 	"github.com/go-chi/render"
 
-	"heart-service/floors"
-	"heart-service/heart"
-	"heart-service/ping"
-	"heart-service/steps"
+	"github.com/christoofar/heart-service/floors"
+	"github.com/christoofar/heart-service/heart"
+	"github.com/christoofar/heart-service/ping"
+	"github.com/christoofar/heart-service/steps"
 )
 
 func Routes() *chi.Mux {

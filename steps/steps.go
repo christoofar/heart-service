@@ -7,7 +7,7 @@ import (
 	"strconv"
 	"time"
 
-	common "heart-service/common"
+	common "github.com/christoofar/heart-service/common"
 
 	"github.com/go-chi/chi"
 	"github.com/go-chi/render"
